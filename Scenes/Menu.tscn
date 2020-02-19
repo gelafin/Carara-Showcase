@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/RichTextLabel.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.178
+anchor_top = 0.16
+anchor_right = 0.8
+anchor_bottom = 0.762
+margin_left = -62.32
+margin_top = -43.18
+margin_right = 94.0
+margin_bottom = 105.424
+mouse_default_cursor_shape = 2
+color = Color( 0.666667, 0.0352941, 0.0352941, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 0.533
+anchor_bottom = 0.521
+margin_left = 512.0
+margin_top = 288.0
+margin_right = 0.479919
+margin_bottom = 0.241974
+text = "regular label!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="RichTextLabel" parent="."]
+anchor_right = 0.422
+anchor_bottom = 0.321
+margin_left = 288.0
+margin_top = 416.0
+margin_right = 288.32
+margin_bottom = 415.842
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 13.39
+bbcode_enabled = true
+bbcode_text = "[url=<url>]google.com[/url]"
+tab_size = 11
+text = "google.com"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
